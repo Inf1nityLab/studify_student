@@ -1,0 +1,68 @@
+{
+  "title": "Шапка экрана (AppBar)",
+  "steps": [
+    {
+      "text": "Второй урок! 😺 Снова напишем экран на Flutter — но теперь добавим шапку сверху (AppBar). Сначала быстро повторим StatelessWidget, как в первом уроке, потом добавим новое. Повторяй у себя в Android Studio / VS Code.",
+      "preview": "empty"
+    },
+    {
+      "text": "Шаг 1. Как и раньше — в пустом файле набери st и выбери stless (StatelessWidget). stful (StatefulWidget) сейчас не нужен.",
+      "autocomplete": true,
+      "preview": "empty"
+    },
+    {
+      "text": "Шаг 2. Развернулась заготовка StatelessWidget. Назови виджет Lesson01a. Внутри снова заглушка Placeholder() (жёлтая строка) — её удалим.",
+      "code": "class Lesson01a extends StatelessWidget {\n  const Lesson01a({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}",
+      "marks": { "5": "hint" },
+      "preview": "placeholder"
+    },
+    {
+      "text": "Шаг 3. Удаляем заглушку Placeholder() (красная строка) и пишем Scaffold() — каркас экрана (зелёная строка). Справа появился экран.",
+      "code": "class Lesson01a extends StatelessWidget {\n  const Lesson01a({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n    return Scaffold();\n  }\n}",
+      "marks": { "5": "removed", "6": "added" },
+      "preview": "scaffold"
+    },
+    {
+      "text": "Шаг 4. Задаём белый фон: backgroundColor: Colors.white (зелёная строка). Справа — белый экран.",
+      "code": "class Lesson01a extends StatelessWidget {\n  const Lesson01a({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(backgroundColor: Colors.white);\n  }\n}",
+      "marks": { "5": "added" },
+      "preview": "color",
+      "color": "white"
+    },
+    {
+      "text": "Шаг 5. Новое! Сначала просто добавляем шапку — appBar: AppBar() (зелёная строка). Обрати внимание: теперь Scaffold записан на несколько строк и у каждого параметра в конце запятая. Справа сверху появилась полоска-шапка (пока цвет по умолчанию).",
+      "code": "class Lesson01a extends StatelessWidget {\n  const Lesson01a({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      backgroundColor: Colors.white,\n      appBar: AppBar(),\n    );\n  }\n}",
+      "marks": { "7": "added" },
+      "preview": "appbar",
+      "color": "white"
+    },
+    {
+      "text": "Шаг 6. Теперь красим шапку. Внутрь AppBar добавляем backgroundColor: Colors.blue (зелёная строка) — точно так же, как красили фон у Scaffold. Справа шапка стала синей.",
+      "code": "class Lesson01a extends StatelessWidget {\n  const Lesson01a({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      backgroundColor: Colors.white,\n      appBar: AppBar(backgroundColor: Colors.blue),\n    );\n  }\n}",
+      "marks": { "7": "added" },
+      "preview": "appbar",
+      "color": "white",
+      "appBarColor": "blue"
+    },
+    {
+      "text": "Задача 1. Сделай шапку (AppBar) зелёной — такую, как справа 👉. Поменяй цвет appBar у себя и покажи результат.",
+      "task": 1,
+      "preview": "appbar",
+      "color": "white",
+      "appBarColor": "green"
+    },
+    {
+      "text": "Задача 2. Теперь сделай шапку красной — как справа 👉.",
+      "task": 2,
+      "preview": "appbar",
+      "color": "white",
+      "appBarColor": "red"
+    },
+    {
+      "text": "Готово! 🎉 Ты добавил шапку AppBar и научился менять её цвет. Покажи свои зелёную и красную шапки — и идём дальше!",
+      "preview": "appbar",
+      "color": "white",
+      "appBarColor": "blue"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Первый экран",
+  "steps": [
+    {
+      "text": "Привет! 😺 Слева я показываю, КАК писать код, по шагам и подсвечиваю изменения. Справа — что получается. Повторяй у себя в Android Studio или VS Code.",
+      "preview": "empty"
+    },
+    {
+      "text": "Шаг 1. В пустом файле набери st — редактор покажет подсказки. Выбери stless (это StatelessWidget) и нажми Enter. stful — это StatefulWidget (для экранов, которые меняются), сейчас не нужен.",
+      "autocomplete": true,
+      "preview": "empty"
+    },
+    {
+      "text": "Шаг 2. Готово — развернулась заготовка StatelessWidget. Дай имя Lesson01. Внутри редактор поставил заглушку Placeholder() (жёлтая строка) — запомни её, скоро удалим. Справа видно, как Placeholder выглядит.",
+      "code": "class Lesson01 extends StatelessWidget {\n  const Lesson01({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}",
+      "marks": { "5": "hint" },
+      "preview": "placeholder"
+    },
+    {
+      "text": "Шаг 3. Удаляем заглушку Placeholder() — красная строка. Вместо неё пишем Scaffold() — это каркас экрана (зелёная строка). Справа появился настоящий экран.",
+      "code": "class Lesson01 extends StatelessWidget {\n  const Lesson01({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n    return Scaffold();\n  }\n}",
+      "marks": { "5": "removed", "6": "added" },
+      "preview": "scaffold"
+    },
+    {
+      "text": "Шаг 4. Добавляем backgroundColor: Colors.white — фон станет белым (зелёная строка). Справа — белый экран.",
+      "code": "class Lesson01 extends StatelessWidget {\n  const Lesson01({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(backgroundColor: Colors.white);\n  }\n}",
+      "marks": { "5": "added" },
+      "preview": "color",
+      "color": "white"
+    },
+    {
+      "text": "Задача 1. Сделай экран зелёным — такой, как справа 👉. Поменяй цвет фона у себя и покажи результат.",
+      "task": 1,
+      "preview": "color",
+      "color": "green"
+    },
+    {
+      "text": "Задача 2. Теперь сделай экран синим — как справа 👉.",
+      "task": 2,
+      "preview": "color",
+      "color": "blue"
+    },
+    {
+      "text": "Задача 3. А теперь красным — как справа 👉.",
+      "task": 3,
+      "preview": "color",
+      "color": "red"
+    },
+    {
+      "text": "Готово! 🎉 Покажи свои зелёный, синий и красный экраны — и идём дальше!",
+      "preview": "color",
+      "color": "red"
+    }
+  ]
+}
